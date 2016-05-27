@@ -5,4 +5,6 @@ To be used for the [FLAT](https://github.com/TheLanguageArchive/FLAT) ([Islandor
 
 Assumes the Yeti Bootswatch style as a starting point.
 
+Icons to be placed in /app/flat/icons/
+
 
