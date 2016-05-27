@@ -34,9 +34,19 @@ button[id^='edit-terms'] { margin-bottom: 4px; }
 dl.solr-thumb { width: 10%; }
 dl.solr-fields { width: 88%; }
 
+/* Islandora Solr facet tweaks */
+div.date-range-slider-canvas-wrapper { margin-bottom: 10px; }
+div.ui-slider { margin-bottom: 15px; }
+span.slider-popup-from { font-size: 0.8em; }
+span.slider-popup-to { font-size: 0.8em; }
+/* Islandora left column list indent */
+.region-sidebar-first ul { padding: 0 0 0 1.5em; }
+.region-sidebar-first ul.islandora-solr-facet { padding: 0 0 0 1.5em; }
 /* Icons in Islandora object view */
-dl.islandora-object-tn { width: 10%; margin: 0px; }	
-
+dl.islandora-object-tn { width: 10%; margin: 0px; }
+/* Islandora list view */
+dt.islandora-object-thumb { margin-top: -8px; margin-bottom: 8px; }
+.islandora-objects-list-item dl dd { margin: 0 0 0 100px; } 
 /* Show files fieldset instead of hiding initially */
 fieldset.collapsed .fieldset-wrapper { display: inline!important; }
 
@@ -46,7 +56,11 @@ fieldset.collapsed .fieldset-wrapper { display: inline!important; }
 /* smaller heading font sizes */
 h1 { font-size: 30px; }
 h2 { font-size: 24px; }
-h3 { font-size: 20px; }
+h3 { font-size: 18px; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top: 10px; }
+/* nav menu block remove padding left and add bullet */
+div.region-sidebar-first ul.nav li a { padding-left: 0px; }
+div.region-sidebar-first ul.nav li { list-style: disc; display: list-item; }
 
 /* panel style changes for CMDI metadata rendering */
 .panel { -webkit-box-shadow: none;

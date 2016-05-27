@@ -23,5 +23,6 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
+stylesheets[all][] = css/islandora_solr.theme.css
 stylesheets[all][] = css/tla.css
 settings[bootstrap_cdn_jsdelivr_theme] = 'yeti'
