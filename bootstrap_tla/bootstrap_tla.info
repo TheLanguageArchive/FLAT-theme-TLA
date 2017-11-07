@@ -1,8 +1,7 @@
-name = Bootstrap FLAT 
-description = Uses http://bootstrapcdn.com for all styles and JavaScript. No source files or compiling is necessary and is recommended for simple sites or beginners.
+name = bootstrap_tla
+description = Subtheme of Bootstrap3 specific for TLA
 core = 7.x
 base theme = bootstrap
-
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
@@ -24,5 +23,6 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/style.css
-settings[bootstrap_cdn_jsdelivr_theme] = 'flatly'
+stylesheets[all][] = css/islandora_solr.theme.css
+stylesheets[all][] = css/tla.css
+settings[bootstrap_cdn_jsdelivr_theme] = 'yeti'
