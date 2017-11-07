@@ -2,8 +2,10 @@
 
 html,body { height: 100%; }
 
-/* remove rounded corners around header, assuming fluid container */
-.navbar { border-radius: 0px; }
+/* remove rounded corners around header, assuming fluid container. Increase font size and weight */
+.navbar { border-radius: 0px;
+	  font-size: 15px;
+	  font-weight: 400; }
 
 /* change navbar background colour */
 .navbar-default { background-color: #1c3655; }
@@ -31,8 +33,8 @@ button[id^='edit-terms'] { margin-bottom: 4px; }
 
 /* Icons in Solr search results */
 .solr-thumb img { border: none; }
-dl.solr-thumb { width: 10%; }
-dl.solr-fields { width: 88%; }
+dl.solr-thumb { width: 5%; }
+dl.solr-fields { width: 93%; }
 
 /* Islandora Solr facet tweaks */
 div.date-range-slider-canvas-wrapper { margin-bottom: 10px; }
@@ -46,7 +48,7 @@ span.slider-popup-to { font-size: 0.8em; }
 dl.islandora-object-tn { width: 10%; margin: 0px; }
 /* Islandora list view */
 dt.islandora-object-thumb { margin-top: -8px; margin-bottom: 8px; }
-.islandora-objects-list-item dl dd { margin: 0 0 0 100px; } 
+.islandora-objects-list-item dl dd { margin: 0 0 0 100px; }
 /* Show files fieldset instead of hiding initially */
 fieldset.collapsed .fieldset-wrapper { display: inline!important; }
 
@@ -55,7 +57,7 @@ fieldset.collapsed .fieldset-wrapper { display: inline!important; }
 
 /* smaller heading font sizes */
 h1 { font-size: 30px; }
-h2 { font-size: 24px; }
+h2 { font-size: 20px; }
 h3 { font-size: 18px; }
 h1, .h1, h2, .h2, h3, .h3 { margin-top: 10px; }
 /* nav menu block remove padding left and add bullet */
@@ -102,3 +104,35 @@ div.islandora-cmdi-metadata div.panel-title a:hover {
 
 /* change breadcrumb font weight for Yeti bootswatch style */
 .breadcrumb { font-weight: 500; font-size: 11px; }
+
+/* solr sort order triangle positioning */
+ul.islandora-solr-sort img { display: inline; vertical-align: baseline; }
+
+/* thumbnail image sizes */
+div.islandora-compound-thumb img, dl.islandora-object-tn img, dt.islandora-object-thumb img { width: 72px; }
+
+/* logo image size */
+div.navbar-header img { width: 36px; }
+
+
+/* icon sizes */
+
+.islandora-basic-collection-object dt img { width: 72px; }
+.islandora-basic-collection-list-item dl dd { margin-left: 100px; }
+.islandora-basic-collection-list-item { padding-bottom: 0.5em; }
+dl.solr-thumb { width: 72px; }
+
+/* larger font sizes for alert and table */
+.alert { font-size: 15px; }
+table { font-size: 14px; }
+
+/* videojs dimensions */
+.islandora_videojs-dimensions { width: 640px; height: 360px; }
+
+/* menu dropdown fix */
+ul.nav li.dropdown:hover ul.dropdown-menu {
+display: block;
+}
+ul.nav li.dropdown ul.dropdown-menu {
+margin-top: 0;
+}
