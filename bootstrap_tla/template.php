@@ -40,8 +40,7 @@ function bootstrap_tla_menu_local_task($variables) {
     if (strpos($element['#link']['path'], $pattern) !== false) {
 
         $name = str_replace($pattern, '', $element['#link']['path']);
-
-        $element['#link']['title'] .= '&nbsp<img alt="gwgwg' . '" src="https://lux126.mpi.nl/' . drupal_get_path('module', 'flat_deposit') . '/Images/My_' . $name . '.png' . '"/>';
+        $element['#link']['localized_options']['attributes']['id'] = $name ;
         $element['#link']['localized_options']['html'] = TRUE;
 
 
