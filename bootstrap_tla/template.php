@@ -25,5 +25,39 @@ function bootstrap_tla_form_islandora_solr_simple_search_form_alter(&$form, &$fo
   );
   return $form;
 }
+/**
+ * Imolements hook_menu_local_task.
+ * Adds icons to the tab menu items in flat dashboard
+ *
+ * @param $variables
+ * @return string
+ */
+function bootstrap_tla_menu_local_task($variables) {
 
-?>
+    $pattern = 'dashboard/%/';
+    $element = &$variables['element'];
+
+    if (strpos($element['#link']['path'], $pattern) !== false) {
+
+        $name = str_replace($pattern, '', $element['#link']['path']);
+
+        $element['#link']['title'] .= '&nbsp<img alt="gwgwg' . '" src="https://lux126.mpi.nl/' . drupal_get_path('module', 'flat_deposit') . '/Images/My_' . $name . '.png' . '"/>';
+        $element['#link']['localized_options']['html'] = TRUE;
+
+
+    }
+
+    return theme_menu_local_task($variables);
+}
+
+
+
+/**
+ * Theme function for the compound navigation block parts.
+ **/
+function bootstrap_tla_preprocess_islandora_compound_prev_next(array &$variables) {
+
+}
+
+
+
