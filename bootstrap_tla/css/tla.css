@@ -136,3 +136,29 @@ display: block;
 ul.nav li.dropdown ul.dropdown-menu {
 margin-top: 0;
 }
+
+/* deposit dashboard tabs styling */
+
+a#bundles, a#collections, a#notifications {
+    font-size: 18px;
+    background-color: #eeeeee;
+}
+a#bundles.active, a#collections.active, a#notifications.active {
+    background-color: #008cba;
+}
+a#bundles:before, a#collections:before, a#notifications:before {
+    font-family: 'Glyphicons Halflings';
+    vertical-align: top;
+}
+a#bundles:before {
+    content: "\e010\00a0";
+    margin-right: -10px;
+}
+a#collections:before {
+    content: "\e118\00a0";
+    margin-right: -7px;
+}
+a#notifications:before {
+    content: "\e032\00a0";
+    margin-right: -9px;
+}
