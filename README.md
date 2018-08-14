@@ -5,6 +5,9 @@ To be used for the [FLAT](https://github.com/TheLanguageArchive/FLAT) ([Islandor
 
 Assumes the Yeti Bootswatch style as a starting point.
 
+Needs Drupal Font Awesome module for additional button icons:
+https://www.drupal.org/project/fontawesome
+
 Icons to be placed in /app/flat/data/icons/
 
 

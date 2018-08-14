@@ -162,3 +162,63 @@ a#notifications:before {
     content: "\e032\00a0";
     margin-right: -9px;
 }
+
+/* ajax throbber position */
+//.ajax-progress-throbber {  position: absolute; right: 0px; z-index: -1;}
+
+/* views table sort triangles */
+.views-table th a .img-responsive { float: right; display: inline; position: relative; top: 3px; }
+
+/* google re-captcha margin */
+div.captcha { margin-bottom: 14px; }
+
+/* hide stuff for demo */
+div.form-item-serial { display: none; }
+article.node-flat-bundle { display: none; }
+article.node-flat-collection div.field { display: none; }
+article.node-flat-collection header { display: none; }
+/* deposit bundle image */
+input#edit-bundle-image {
+    width: 150px;
+}
+
+/* deposit form notes */
+div#form-actions-note, div#update-resources-note {
+   font-size: 12px;
+   color: #A9A9A9;
+}
+
+/* existing resources table */
+th.resource-table-select { width: 70px; }
+
+/* hide bundle type field */
+div.field-name-flat-type { display: none; }
+
+/* bundle action buttons icons */ 
+button#edit-describe-bundle:before {
+    font-family: "Font Awesome 5 Free";
+    vertical-align: top;
+    content:"\f02c";
+    margin-right: 7px;
+}
+
+button#edit-validate-bundle:before {
+    font-family: 'Font Awesome 5 Free';
+    vertical-align: top;
+    content:"\f560";
+    margin-right: 7px;
+}
+
+button#edit-reopen-bundle:before {
+    font-family: 'Glyphicons Halflings';
+    vertical-align: top;
+    content:"\e030";
+    margin-right: 7px;
+}
+
+button#edit-archive-bundle:before {
+    font-family: "Font Awesome 5 Free";
+    vertical-align: top;
+    content:"\f187";
+    margin-right: 7px;
+}

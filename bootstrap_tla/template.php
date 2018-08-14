@@ -58,5 +58,14 @@ function bootstrap_tla_preprocess_islandora_compound_prev_next(array &$variables
 
 }
 
+function bootstrap_tla_bootstrap_iconize_text_alter(&$texts) {
+    $texts['matches'][t('Remove Address')] = 'trash';
+}
+
+function bootstrap_tla_bootstrap_colorize_text_alter(&$texts) {
+	$texts['matches'][t('Remove Address')] = 'danger';
+	$texts['matches'][t('Add Research Discipline')] = 'success';
+}
+
 
 
