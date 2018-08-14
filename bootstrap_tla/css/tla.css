@@ -168,6 +168,21 @@ a#notifications:before {
 
 /* views table sort triangles */
 .views-table th a .img-responsive { float: right; display: inline; position: relative; top: 3px; }
+/* newer bootstrap version uses glyphicon instead of image. Doesn't look so nice so we'll change that back to arrow images */
+.glyphicon-chevron-down:before {
+    content:url('/misc/arrow-asc.png');
+}
+.glyphicon-chevron-down {
+    display: inline!important;
+    float: right;
+}
+.glyphicon-chevron-up:before {
+    content:url('/misc/arrow-desc.png');
+}
+.glyphicon-chevron-up {
+    display: inline!important;
+    float: right;
+}
 
 /* google re-captcha margin */
 div.captcha { margin-bottom: 14px; }
