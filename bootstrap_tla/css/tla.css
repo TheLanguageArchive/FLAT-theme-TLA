@@ -29,7 +29,52 @@ html,body { height: 100%; }
 /* Islandora advanced Solr search, align plus and minus buttons with text boxes */
 button[id^='edit-terms'] { margin-bottom: 4px; }
 
+/* footer */
 .footer { min-height: 100%; background-color: #333333; color: #aaaaaa;  }
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/merriweather-sans-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'),
+       url('../fonts/merriweather-sans-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merriweather-sans-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merriweather-sans-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/merriweather-sans-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merriweather-sans-v9-latin-regular.svg#MerriweatherSans') format('svg'); /* Legacy iOS */
+}
+div.footer-div {
+        font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        padding: 5px;
+        max-width: 1000px;
+        width: 95%;
+        margin: 20px auto;
+
+}
+
+.footer-div1, .footer-div2, .footer-div3 {
+        display: inline-block;
+        margin: 5px 0;
+        vertical-align: top;
+}
+
+@media screen and (min-width: 850px) {
+.footer-div1 { width: 34%; }
+.footer-div2 { width: 35%; text-align: center; }
+.footer-div3 { width: 29%; text-align: right; }
+}
+@media screen and (max-width: 849px) {
+.footer-div1 { width: 100%; }
+.footer-div2 { width: 100%; text-align: center; }
+.footer-div3 { width: 100%; text-align: center; }
+}
+
+.footer-div-bottom { text-align: center; }
 
 /* Icons in Solr search results */
 .solr-thumb img { border: none; }
@@ -111,12 +156,16 @@ ul.islandora-solr-sort img { display: inline; vertical-align: baseline; }
 /* thumbnail image sizes */
 div.islandora-compound-thumb img, dl.islandora-object-tn img, dt.islandora-object-thumb img { width: 72px; }
 
+/* views collection view styling */
+div.views-field-TN-Image img { width: 80px; }
+div.views-field-TN-Image { float:left; width: 95px; margin-bottom: 15px; }
+div.collection-view-description { margin-left: 95px; }
+div.collection-row { clear: both; min-height: 90px; margin-bottom: 15px; } 
+
 /* logo image size */
 div.navbar-header img { width: 36px; }
 
-
 /* icon sizes */
-
 .islandora-basic-collection-object dt img { width: 72px; }
 .islandora-basic-collection-list-item dl dd { margin-left: 100px; }
 .islandora-basic-collection-list-item { padding-bottom: 0.5em; }
