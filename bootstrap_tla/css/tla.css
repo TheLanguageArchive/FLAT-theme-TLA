@@ -258,23 +258,27 @@ th.resource-table-select { width: 70px; }
 /* hide bundle type field */
 div.field-name-flat-type { display: none; }
 
-/* bundle action buttons icons */ 
+/* bundle action buttons icons */
 button#edit-describe-bundle:before {
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 15px;
     vertical-align: top;
     content:"\f02c";
     margin-right: 7px;
 }
 
 button#edit-validate-bundle:before {
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 15px;
     vertical-align: top;
     content:"\f560";
     margin-right: 7px;
 }
 
 button#edit-reopen-bundle:before {
-    font-family: 'Glyphicons Halflings';
+    font-family: "Glyphicons Halflings";
     vertical-align: top;
     content:"\e030";
     margin-right: 7px;
@@ -282,7 +286,15 @@ button#edit-reopen-bundle:before {
 
 button#edit-archive-bundle:before {
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 15px;
     vertical-align: top;
     content:"\f187";
     margin-right: 7px;
+}
+
+.alert-danger a,
+.alert-danger a:focus,
+.alert-danger a:hover, {
+        color: #d63333;
 }
