@@ -2,25 +2,33 @@
 
 /**
  * Implements hook_form_alter().
+ * 
+ * Modifying the islandora simple search box to look like the bootstrap one
+ * 
  */
 function bootstrap_tla_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $form['simple'] = array(
     '#type' => 'container',
+    '#theme_wrappers' => array(),
     '#attributes' => array(
       'class' => array(
         'container-inline',
       ),
     ),
   );
-  $form['simple']["islandora_simple_search_query"] = array(
+  $form['simple']['islandora_simple_search_query'] = array(
     '#size' => '15',
     '#type' => 'textfield',
+    '#prefix' => '<div class="input-group">',
     '#title' => t(""),
+    '#theme_wrappers' => array(),
     '#attributes' => array('placeholder' => t('Search'),
-        ),
+    ),
   );
   $form['simple']['submit'] = array(
     '#type' => 'submit',
+    '#prefix' => '<span class="input-group-btn">',
+    '#suffix' => '</span></div>',
     '#value' => t('<span aria-hidden="true" class="icon glyphicon glyphicon-search"></span>'),
   );
   return $form;
