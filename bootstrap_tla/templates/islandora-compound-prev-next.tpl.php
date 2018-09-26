@@ -55,21 +55,7 @@
             <?php foreach ($themed_siblings as $sibling): ?>
                 <div class="islandora-compound-thumb">
                     <div class='islandora-compound-caption'><?php print $sibling['label'];?></div>
-                    <?php print theme_link ( array (
 
-
-                            'text' => "&nbspDownload<br>",
-                            'path' => 'islandora/object/' . $sibling['pid'] . '/datastream/OBJ/download',
-                            'options' => array(
-                                'attributes' => array(
-                                    'class' => array('islandora-compound-caption'),
-                                    'align' => 'left',
-                                ),
-                                //REQUIRED:
-                                'html' => true,
-                            ),
-                        )
-                    );?>
                     <?php print l(
                         theme_image(
                             array(
@@ -82,6 +68,9 @@
                     );
                     ?>
 
+                    <?php print l(t('View'), 'islandora/object/' . $sibling['pid'], array('attributes' => array('class' => array('islandora-compound-caption', 'islandora-compound-caption-link')))); ?>
+
+                    <?php print l(t('Download'), 'islandora/object/' . $sibling['pid'] . '/datastream/OBJ/download', array('attributes' => array('class' => array('islandora-compound-caption', 'islandora-compound-caption-link')))); ?>
 
                 </div>
 
